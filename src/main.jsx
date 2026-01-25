@@ -19,6 +19,17 @@ import StyledPanel from './chap3/StyledPanel';
 import TitledPanel from './chap3/TitledPanel';
 import ListTemplate from './chap3/ListTemplate';
 import StateParent from './chap3/StateParent';
+import EventMouse from './chap3/EventMouse';
+import EventCompare from './chap3/EventCompare';
+import EventError from './chap3/EventError';
+import EventObj from './chap3/EventObj';
+import EventPoint from './chap3/EventPoint';
+import EventKey from './chap3/EventKey';
+import EventArgs from './chap3/EventArgs';
+import EventArgs2 from './chap3/EventArgs2';
+import EventPropagation from './chap3/EventPropagation';
+import EventOnce from './chap3/EventOnce';
+import EventPassive from './chap3/EventPassive';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -118,57 +129,57 @@ const root = createRoot(document.getElementById('root'));
 //     )} />
 // );
 
+// root.render(
+//     <StateParent />
+// );
+
+// root.render(
+//     <EventMouse
+//         alt="ロゴ画像"
+//         defaultSrc="https://www.web-deli.com/image/linkbanner_l.gif"
+//         afterSrc="https://www.web-deli.com/image/home_chara.gif" />
+// );
+
+// root.render(
+//     <EventCompare />
+// );
+
+// root.render(
+//     <EventError src="/image/wings.jpg"
+//         alt="サンプル画像" />
+// );
+
+// root.render(
+//     <EventObj />
+// );
+
+// root.render(
+//     <EventPoint />
+// );
+
+// root.render(
+//     <EventKey />
+// );
+
+// root.render(
+//     <EventArgs />
+// );
+
+// root.render(
+//     <EventArgs2 />
+// );
+
+// root.render(
+//     <EventPropagation />
+// );
+
+// root.render(
+//     <EventOnce />
+// );
+
 root.render(
-    <StateParent />
+    <EventPassive />
 );
-
-// root.render(
-//   <EventMouse
-//     alt="ロゴ画像"
-//     defaultSrc="https://www.web-deli.com/image/linkbanner_l.gif"
-//     afterSrc="https://www.web-deli.com/image/home_chara.gif" />
-// );
-
-// root.render(
-//   <EventCompare />
-// );
-
-// root.render(
-//   <EventError src="/image/wings.jpg"
-//     alt="サンプル画像" />
-// );
-
-// root.render(
-//   <EventObj />
-// );
-
-// root.render(
-//   <EventPoint />
-// );
-
-// root.render(
-//   <EventKey />
-// );
-
-// root.render(
-//   <EventArgs />
-// );
-
-// root.render(
-//   <EventArgs2 />
-// );
-
-// root.render(
-//   <EventPropagation />
-// );
-
-// root.render(
-//   <EventOnce />
-// );
-
-// root.render(
-//   <EventPassive />
-// );
 
 // #endregion
 
