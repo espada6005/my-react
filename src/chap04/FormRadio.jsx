@@ -27,7 +27,7 @@ export default function FormRadio() {
                     onChange={handleForm} /><br />
                 <label htmlFor="os_mac">macOS</label>
                 <input id="os_mac" name="os"
-    gggg                type="radio" value="mac"
+                    type="radio" value="mac"
                     checked={form.os === 'mac'}
                     onChange={handleForm} /><br />
                 <label htmlFor="os_lin">Linux</label>
