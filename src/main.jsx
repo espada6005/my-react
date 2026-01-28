@@ -45,6 +45,9 @@ import StateNest from './chap04/StateNest';
 import StateNestImmer from './chap04/StateNestImmer';
 import StateNestImmer2 from './chap04/StateNestImmer2';
 import StateTodo from './chap04/StateTodo';
+import FormBasic from './chap04/FormBasic';
+import FormYup from './chap04/FormYup';
+import FormJapan from './chap04/FormJapan';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -247,21 +250,21 @@ const root = createRoot(document.getElementById('root'));
 //     <StateNestImmer2 />
 // );
 
+// root.render(
+//     <StateTodo />
+// );
+
+// root.render(
+//     <FormBasic />
+// );
+
+// root.render(
+//     <FormYup />
+// );
+
 root.render(
-    <StateTodo />
+    <FormJapan />
 );
-
-// root.render(
-//   <FormBasic />
-// );
-
-// root.render(
-//   <FormYup />
-// );
-
-// root.render(
-//   <FormJapan />
-// );
 // #endregion
 
 // #region -------------------- chap05 --------------------
