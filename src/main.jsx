@@ -48,6 +48,8 @@ import StateTodo from './chap04/StateTodo';
 import FormBasic from './chap04/FormBasic';
 import FormYup from './chap04/FormYup';
 import FormJapan from './chap04/FormJapan';
+import LazyBasic from './chap05/LazyBasic';
+import LazyMulti from './chap05/LazyMulti';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -262,19 +264,19 @@ const root = createRoot(document.getElementById('root'));
 //     <FormYup />
 // );
 
-root.render(
-    <FormJapan />
-);
+// root.render(
+//     <FormJapan />
+// );
 // #endregion
 
 // #region -------------------- chap05 --------------------
 // root.render(
-//   <LazyBasic />
+//     <LazyBasic />
 // );
 
-// root.render(
-//   <LazyMulti />
-// );
+root.render(
+    <LazyMulti />
+);
 
 // root.render(
 //   <SuspenseSimple />
