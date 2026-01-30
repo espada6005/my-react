@@ -50,6 +50,9 @@ import FormYup from './chap04/FormYup';
 import FormJapan from './chap04/FormJapan';
 import LazyBasic from './chap05/LazyBasic';
 import LazyMulti from './chap05/LazyMulti';
+import SuspenseSimple from '../SuspenseSimple';
+import SuspenseResult from './chap05/SuspenseResult';
+import ProfilerBasic from './chap05/ProfilerBasic';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -274,21 +277,21 @@ const root = createRoot(document.getElementById('root'));
 //     <LazyBasic />
 // );
 
+// root.render(
+//     <LazyMulti />
+// );
+
+// root.render(
+//     <SuspenseSimple />
+// );
+
+// root.render(
+//     <SuspenseResult/>
+// );
+
 root.render(
-    <LazyMulti />
+    <ProfilerBasic />
 );
-
-// root.render(
-//   <SuspenseSimple />
-// );
-
-// root.render(
-//   <SuspenseResult />
-// );
-
-// root.render(
-//   <ProfilerBasic />
-// );
 
 // root.render(
 //   <ModuleBasic />
