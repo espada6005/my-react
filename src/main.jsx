@@ -53,6 +53,12 @@ import LazyMulti from './chap05/LazyMulti';
 import SuspenseSimple from '../SuspenseSimple';
 import SuspenseResult from './chap05/SuspenseResult';
 import ProfilerBasic from './chap05/ProfilerBasic';
+import ModuleBasic from './chap05/ModuleBasic';
+import ModuleTheme from './chap05/ModuleTheme';
+import style1 from './chap05/AppStyle1.module.css';
+import style2 from './chap05/AppStyle2.module.css';
+import style3 from './chap05/AppStyle3.module.css';
+import ModuleNest from './chap05/ModuleNest';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -289,28 +295,28 @@ const root = createRoot(document.getElementById('root'));
 //     <SuspenseResult/>
 // );
 
-root.render(
-    <ProfilerBasic />
-);
-
 // root.render(
-//   <ModuleBasic />
+//     <ProfilerBasic />
 // );
 
 // root.render(
-//   <>
-//     <h3 className="head">CSS Modules</h3>
 //     <ModuleBasic />
-//   </>
 // );
 
 // root.render(
-//   <ModuleTheme theme={style1} />
+//     <>
+//         <h3 className="head">CSS Modules</h3>
+//         <ModuleBasic />
+//     </>
 // );
 
 // root.render(
-//   <ModuleNest />
+//     <ModuleTheme theme={style1} />
 // );
+
+root.render(
+    <ModuleNest />
+);
 
 // root.render(
 //   <EmotionBasic />
