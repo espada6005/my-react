@@ -62,7 +62,7 @@ import style3 from './chap05/AppStyle3.module.css';
 import ModuleNest from './chap05/ModuleNest';
 import EmotionBasic from './chap05/EmotionBasic';
 /** @jsxImportSource @emotion/react */
-import { css, Global } from '@emotion/react';
+import { css, Global, ThemeProvider } from '@emotion/react';
 import EmotionStyled from './chap05/EmotionStyled';
 import EmotionProps from './chap05/EmotionProps';
 import MotionBasic from './chap05/MotionBasic';
@@ -81,6 +81,15 @@ import MetaBasic from "./chap05/MetaBasic";
 import ScriptBasic from './chap05/ScriptBasic';
 import StyleBasic from './chap05/StyleBasic';
 import StyleInline from './chap05/StyleInline';
+import MaterialBasic from './chap06/MaterialBasic';
+import MaterialDrawer from '../MaterialDrawer';
+import MaterialGrid from './chap06/MaterialGrid';
+import { CssBaseline } from '@mui/material';
+import theme from './chap06/theme';
+import MaterialMode from './chap06/MaterialMode';
+import FormMui from './chap06/FormMui';
+
+// -------------------- Chap06 --------------------
 
 const root = createRoot(document.getElementById('root'));
 
@@ -435,38 +444,38 @@ const root = createRoot(document.getElementById('root'));
 //     <StyleBasic />
 // );
 
-root.render(
-    <StyleInline />
-);
+// root.render(
+//     <StyleInline />
+// );
 // #endregion
 
 // #region -------------------- chap06 --------------------
 // root.render(
-//   <MaterialBasic />
-// );
-
-// root.render(
-//   <MaterialDrawer />
-// );
-
-// root.render(
-//   <MaterialGrid />
-// );
-
-// root.render(
-//   <ThemeProvider theme={theme}>
-//     <CssBaseline />
 //     <MaterialBasic />
-//   </ThemeProvider>
 // );
 
 // root.render(
-//   <MaterialMode />
+//     <MaterialDrawer />
 // );
 
 // root.render(
-//   <FormMui />
+//     <MaterialGrid />
 // );
+
+// root.render(
+//     <ThemeProvider theme={theme}>
+//         <CssBaseline />
+//         <MaterialBasic />
+//     </ThemeProvider>
+// );
+
+// root.render(
+//     <MaterialMode />
+// );
+
+root.render(
+    <FormMui />
+);
 
 // root.render(
 //   <SWRPre />
