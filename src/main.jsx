@@ -4,7 +4,6 @@ import { createRoot } from 'react-dom/client'
 // import App from './App.jsx'
 
 // -------------------- Chap03 --------------------
-
 import MyHello from './chap03/MyHello';
 import EventBasic from './chap03/EventBasic';
 import StateBasic from './chap03/StateBasic';
@@ -49,6 +48,8 @@ import FormBasic from './chap04/FormBasic';
 import FormYup from './chap04/FormYup';
 import FormJapan from './chap04/FormJapan';
 import LazyBasic from './chap05/LazyBasic';
+
+// -------------------- Chap05 --------------------
 import LazyMulti from './chap05/LazyMulti';
 import SuspenseSimple from '../SuspenseSimple';
 import SuspenseResult from './chap05/SuspenseResult';
@@ -59,6 +60,27 @@ import style1 from './chap05/AppStyle1.module.css';
 import style2 from './chap05/AppStyle2.module.css';
 import style3 from './chap05/AppStyle3.module.css';
 import ModuleNest from './chap05/ModuleNest';
+import EmotionBasic from './chap05/EmotionBasic';
+/** @jsxImportSource @emotion/react */
+import { css, Global } from '@emotion/react';
+import EmotionStyled from './chap05/EmotionStyled';
+import EmotionProps from './chap05/EmotionProps';
+import MotionBasic from './chap05/MotionBasic';
+import MotionWhile from './chap05/MotionWhile';
+import MotionExit from './chap05/MotionExit';
+import MotionRepeat from './chap05/MotionRepeat';
+import MotionAll from './chap05/MotionAll';
+import MotionVariant from './chap05/MotionVariant';
+import MotionNest from './chap05/MotionNest';
+import MotionFrame from './chap05/MotionFrame';
+import PortalBasic from './chap05/PortalBasic';
+import ErrorRoot from './chap05/ErrorRoot';
+import ErrorRetryRoot from './chap05/ErrorRetryRoot';
+import ErrorEventRoot from './chap05/ErrorEventRoot';
+import MetaBasic from "./chap05/MetaBasic";
+import ScriptBasic from './chap05/ScriptBasic';
+import StyleBasic from './chap05/StyleBasic';
+import StyleInline from './chap05/StyleInline';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -314,108 +336,108 @@ const root = createRoot(document.getElementById('root'));
 //     <ModuleTheme theme={style1} />
 // );
 
-root.render(
-    <ModuleNest />
-);
+// root.render(
+//     <ModuleNest />
+// );
 
 // root.render(
-//   <EmotionBasic />
+//     <EmotionBasic />
 // );
 
 // const global = css`
-//   body {
-//     background-color: Yellow;
-//   }
+//     body {
+//         background-color: Yellow;
+//     }
 // `;
 
 // root.render(
-//   <>
-//     <Global styles={global} />
-//     <EmotionBasic />
-//   </>
+//     <>
+//         <Global styles={global} />
+//         <EmotionBasic />
+//     </>
 // );
 
 // root.render(
-//   <EmotionStyled />
+//     <EmotionStyled />
 // );
 
 // root.render(
-//   <>
-//     <MyButton>ボタン</MyButton>
-//     <MyStyledButton>ボタン</MyStyledButton>
-//   </>
+//     <>
+//         <MyButton>ボタン</MyButton>
+//         <MyStyledButton>ボタン</MyStyledButton>
+//     </>
 // );
 
 // root.render(
-//   <EmotionProps />
+//     <EmotionProps />
 // );
 
 // root.render(
-//   <MotionBasic />
+//     <MotionBasic />
 // );
 
 // root.render(
-//   <MotionWhile />
+//     <MotionWhile />
 // );
 
 // root.render(
-//   <MotionExit />
+//     <MotionExit />
 // );
 
 // root.render(
-//   <MotionRepeat />
+//     <MotionRepeat />
 // );
 
 // root.render(
-//   <MotionAll />
+//     <MotionAll />
 // );
 
 // root.render(
-//   <MotionVariant />
+//     <MotionVariant />
 // );
 
 // root.render(
-//   <MotionNest />
+//     <MotionNest />
 // );
 
 // root.render(
-//   <MotionFrame />
+//     <MotionFrame />
 // );
 
 // root.render(
-//   <>
-//     <div id="dialog"></div>
-//     <PortalBasic />
-//   </>
+//     <>
+//         <div id="dialog"></div>
+//         <PortalBasic />
+//     </>
 // );
 
 // root.render(
-//   <ErrorRoot />
+//     <ErrorRoot />
 // );
 
 // root.render(
-//   <ErrorRetryRoot />
+//     <ErrorRetryRoot />
 // );
 
 // root.render(
-//   <ErrorEventRoot />
+//     <ErrorEventRoot />
 // );
 
 // root.render(
-//   <MetaBasic />
+//     <MetaBasic />
 // );
 
 // root.render(
-//   <ScriptBasic />
+//     <ScriptBasic />
 // );
 
 // root.render(
-//   <StyleBasic />
+//     <StyleBasic />
 // );
 
-// root.render(
-//   <StyleInline />
-// );
+root.render(
+    <StyleInline />
+);
 // #endregion
 
 // #region -------------------- chap06 --------------------
