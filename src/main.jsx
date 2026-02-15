@@ -81,15 +81,15 @@ import MetaBasic from "./chap05/MetaBasic";
 import ScriptBasic from './chap05/ScriptBasic';
 import StyleBasic from './chap05/StyleBasic';
 import StyleInline from './chap05/StyleInline';
+
+// -------------------- Chap06 --------------------
 import MaterialBasic from './chap06/MaterialBasic';
-import MaterialDrawer from '../MaterialDrawer';
+import MaterialDrawer from './chap06/MaterialDrawer';
 import MaterialGrid from './chap06/MaterialGrid';
 import { CssBaseline } from '@mui/material';
 import theme from './chap06/theme';
 import MaterialMode from './chap06/MaterialMode';
 import FormMui from './chap06/FormMui';
-
-// -------------------- Chap06 --------------------
 
 const root = createRoot(document.getElementById('root'));
 
