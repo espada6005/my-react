@@ -51,7 +51,7 @@ import LazyBasic from './chap05/LazyBasic';
 
 // -------------------- Chap05 --------------------
 import LazyMulti from './chap05/LazyMulti';
-import SuspenseSimple from '../SuspenseSimple';
+import SuspenseSimple from './chap05/SuspenseSimple';
 import SuspenseResult from './chap05/SuspenseResult';
 import ProfilerBasic from './chap05/ProfilerBasic';
 import ModuleBasic from './chap05/ModuleBasic';
@@ -90,6 +90,11 @@ import { CssBaseline } from '@mui/material';
 import theme from './chap06/theme';
 import MaterialMode from './chap06/MaterialMode';
 import FormMui from './chap06/FormMui';
+import SWRPre from './chap06/SWRPre';
+import SWRBasic from './chap06/SWRBasic';
+import SWRApp from './chap06/SWRApp';
+import SWRCompare from './chap06/SWRCompare';
+import SWRRender from './chap06/SWRRender';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -473,29 +478,29 @@ const root = createRoot(document.getElementById('root'));
 //     <MaterialMode />
 // );
 
+// root.render(
+//     <FormMui />
+// );
+
+// root.render(
+//     <SWRPre />
+// );
+
+// root.render(
+//     <SWRBasic />
+// );
+
+// root.render(
+//     <SWRApp />
+// );
+
+// root.render(
+//     <SWRCompare />
+// );
+
 root.render(
-    <FormMui />
+    <SWRRender />
 );
-
-// root.render(
-//   <SWRPre />
-// );
-
-// root.render(
-//   <SWRBasic />
-// );
-
-// root.render(
-//   <SWRApp />
-// );
-
-// root.render(
-//   <SWRCompare />
-// );
-
-// root.render(
-//   <SWRRender />
-// );
 
 // #endregion
 
