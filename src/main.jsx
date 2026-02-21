@@ -96,6 +96,29 @@ import SWRApp from './chap06/SWRApp';
 import SWRCompare from './chap06/SWRCompare';
 import SWRRender from './chap06/SWRRender';
 
+// -------------------- Chap07 --------------------
+import StateEffect from './chap07/StateEffect';
+import HookTimer from './chap07/HookTimer';
+import HookEffect from './chap07/HookEffect';
+import HookRefNg from './chap07/HookRefNg';
+import HoolRef from './chap07/HookRef';
+import HookRefForward from './chap07/HookRefForward';
+import HookCallbackRef from './chap07/HookCallbackRef';
+import HookReducer from './chap07/HookReducer';
+import HookReducerUp from './chap07/HookReducerUp';
+import HookReducerInit from './chap07/HookReducerInit';
+import HookContext from './chap07/HookContext';
+import MyThemeProvider from './chap07/MyThemeProvider';
+import HookThemeButton from './chap07/HookThemeButton';
+import UsePromise from './chap07/UsePromise';
+import { Suspense } from 'react';
+import JotaiCounter from './chap07/JotaiCounter';
+import JotaiTodo from './chap07/JotaiTodo';
+import JotaiAsync from './chap07/JotaiAsync';
+import JotaiTodoUp from './chap07/JotaiTodoUp';
+import { createStore ,Provider } from 'jotai';
+
+
 const root = createRoot(document.getElementById('root'));
 
 // #region -------------------- chap03 --------------------
@@ -498,129 +521,129 @@ const root = createRoot(document.getElementById('root'));
 //     <SWRCompare />
 // );
 
-root.render(
-    <SWRRender />
-);
+// root.render(
+//     <SWRRender />
+// );
 
 // #endregion
 
 // #region -------------------- chap07 --------------------
 // root.render(
-//   <StateEffect init={0} />
+//     <StateEffect init={0} />
 // );
 
 // root.render(
-//   <HookTimer init={10} />
+//     <HookTimer init={10} />
 // );
 
 // root.render(
-//   <HookEffect init={10} />
+//     <HookEffect init={10} />
 // );
 
 // root.render(
-//   <HookRefNg />
+//     <HookRefNg />
 // );
 
 // root.render(
-//   <HookRef />
+//     <HoolRef />
 // );
 
 // root.render(
-//   <HookRefForward />
+//     <HookRefForward />
 // );
 
 // root.render(
-//   <HookCallbackRef />
+//     <HookCallbackRef />
 // );
 
 // root.render(
-//   <HookReducer init={0} />
+//     <HookReducer init={0} />
 // );
 
 // root.render(
-//   <HookReducerUp init={0} />
+//     <HookReducerUp init={0} />
 // );
 
 // root.render(
-//   <HookReducerInit init={0} />
+//     <HookReducerInit init={0} />
 // );
 
 // root.render(
-//   <HookContext />
+//     <HookContext />
 // );
 
 // root.render(
-//   <MyThemeProvider>
-//     <HookThemeButton />
-//   </MyThemeProvider>
+//     <MyThemeProvider>
+//         <HookThemeButton />
+//     </MyThemeProvider>
 // );
 
 // function fetchInfo() {
-//   return new Promise(resolve => {
-//     setTimeout(() => resolve('Promiseの結果です！'), 5000);
-//   });
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve('Promiseの結果です！'), 5000);
+//     });
 // }
 
 // root.render(
-//   <Suspense fallback={<div>Loading...</div>}>
-//     <UsePromise service={fetchInfo()} />
-//   </Suspense>
+//     <Suspense fallback={<div>Loading...</div>}>
+//         <UsePromise service={fetchInfo()} />
+//     </Suspense>
 // );
 
 // root.render(
-//   <JotaiCounter />
-// );
-
-// root.render(
-//   <JotaiTodo />
-// );
-
-// root.render(
-//   <Suspense fallback={<div>Loading...</div>}>
-//     <JotaiAsync />
-//   </Suspense>
-// );
-
-// root.render(
-//   <JotaiTodoUp />
-// );
-
-// root.render(
-//   <>
 //     <JotaiCounter />
-//     <JotaiCounter />
-//     <JotaiCounter />
-//   </>
 // );
 
 // root.render(
-//   <>
-//     <Provider>
-//       <JotaiCounter />
-//     </Provider>
-//     <Provider>
-//       <JotaiCounter />
-//     </Provider>
-//     <Provider>
-//       <JotaiCounter />
-//     </Provider>
-//   </>
+//     <JotaiTodo />
 // );
 
-// const store = createStore();
 // root.render(
-//   <>
-//     <Provider store={store}>
-//       <JotaiCounter />
-//     </Provider>
-//     <Provider>
-//       <JotaiCounter />
-//     </Provider>
-//     <Provider store={store}>
-//       <JotaiCounter />
-//     </Provider>
-//   </>
+//     <Suspense fallback={<div>Loading...</div>}>
+//         <JotaiAsync />
+//     </Suspense>
 // );
+
+// root.render(
+//     <JotaiTodoUp />
+// );
+
+// root.render(
+//     <>
+//         <JotaiCounter />
+//         <JotaiCounter />
+//         <JotaiCounter />
+//     </>
+// );
+
+// root.render(
+//     <>
+//         <Provider>
+//             <JotaiCounter />
+//         </Provider>
+//         <Provider>
+//             <JotaiCounter />
+//         </Provider>
+//         <Provider>
+//             <JotaiCounter />
+//         </Provider>
+//     </>
+// );
+
+const store = createStore();
+root.render(
+    <>
+        <Provider store={store}>
+            <JotaiCounter />
+        </Provider>
+        <Provider>
+            <JotaiCounter />
+        </Provider>
+        <Provider store={store}>
+            <JotaiCounter />
+        </Provider>
+    </>
+);
 // #endregion
 
 // #region -------------------- chap08 --------------------
