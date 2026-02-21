@@ -116,8 +116,16 @@ import JotaiCounter from './chap07/JotaiCounter';
 import JotaiTodo from './chap07/JotaiTodo';
 import JotaiAsync from './chap07/JotaiAsync';
 import JotaiTodoUp from './chap07/JotaiTodoUp';
-import { createStore ,Provider } from 'jotai';
+import { createStore, Provider } from 'jotai';
 
+// -------------------- Chap08 --------------------
+import HookMemo from './chap08/HookMemo';
+import HookTransition from './chap08/HookTransition';
+import HookDeferred from './chap08/HookDeferred';
+import HookDeferredTransition from './chap08/HookDeferredTransition';
+import ActionBasic from './chap08/ActionBasic';
+import ActionOptimistic from './chap08/ActionOptimistic';
+import HookCustom from './chap08/HookCustom';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -630,54 +638,54 @@ const root = createRoot(document.getElementById('root'));
 //     </>
 // );
 
-const store = createStore();
-root.render(
-    <>
-        <Provider store={store}>
-            <JotaiCounter />
-        </Provider>
-        <Provider>
-            <JotaiCounter />
-        </Provider>
-        <Provider store={store}>
-            <JotaiCounter />
-        </Provider>
-    </>
-);
+// const store = createStore();
+// root.render(
+//     <>
+//         <Provider store={store}>
+//             <JotaiCounter />
+//         </Provider>
+//         <Provider>
+//             <JotaiCounter />
+//         </Provider>
+//         <Provider store={store}>
+//             <JotaiCounter />
+//         </Provider>
+//     </>
+// );
 // #endregion
 
 // #region -------------------- chap08 --------------------
 // root.render(
-//   <HookMemo />
+//     <HookMemo />
 // );
 
 // root.render(
-//   <HookTransition />
+//     <HookTransition />
 // );
 
 // root.render(
-//   <HookDeferred />
+//     <HookDeferred />
 // );
 
 // root.render(
-//   <HookDeferredTransition />
+//     <HookDeferredTransition />
 // );
 
 // root.render(
-//   <ActionPre />
+//     <ActionPre />
 // );
 
 // root.render(
-//   <ActionBasic />
+//     <ActionBasic />
 // );
 
 // root.render(
-//   <ActionOptimistic />
+//     <ActionOptimistic />
 // );
 
-// root.render(
-//   <HookCustom />
-// );
+root.render(
+    <HookCustom />
+);
 // #endregion
 
 // #region -------------------- column --------------------
